@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to SimplifySign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/login_bg.webp');
+            /* Path to your image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Centered login form */
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Slight white background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            margin: 10px auto; /* Center margins */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login to SimplifySign</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <script>
+        const loginBtn = document.getElementById("login-btn");
+
+        loginBtn.addEventListener("click", () => {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Hardcoded user credentials for demo purposes
+            const validUsername = "kishor";
+            const validPassword = "kish181997";
+
+            if (username === validUsername && password === validPassword) {
+                // Store login status in local storage
+                localStorage.setItem("isLoggedIn", "true");
+                // Redirect to the main page
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid username or password!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
