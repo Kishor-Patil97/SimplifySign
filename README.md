@@ -42,7 +42,7 @@ live-server --port=8080
 
 Open your browser and navigate to http://localhost:8080 to view the application.
 
-**Project Structure**
+## Project Structure
 SimplifySign/
 ├── public/                    # Contains HTML, CSS, JavaScript files
 │   ├── index.html             # Main HTML file
@@ -53,18 +53,18 @@ SimplifySign/
 ├── .gitignore                 # Ignores node_modules, video files, and other non-essential items
 └── package.json               # Project metadata (future versions may require backend packages)
 
-**Usage Guide**
+## Usage Guide
 1. Speech-to-Text: Click on the microphone button to start speaking. Your speech will be converted into text and displayed in the text area.
 2. Clear Text: Use the "Clear Text" button to clear the text area for new input.
 3. Text-to-Sign Language: Once text is displayed, click "Play" to start the sign language animation. Use "Pause" and "Stop" to control playback.
 
-**Future Enhancements**
+## Future Enhancements
 3D Avatar or Animated Hand Gestures: Expand to support more dynamic and realistic sign language animations.
 Database Integration: Optimize MongoDB for faster video retrieval and larger datasets.
 Sign Language Recognition: Develop algorithms for real-time sign language recognition and response.
 
-**License**
+## License
 This project is for academic purposes as part of a Master’s Thesis and is open for educational use. All rights reserved by the author.
 
-**Acknowledgments**
+## Acknowledgments
 Thanks to SRH Hochschule Heidelberg for providing an inclusive platform for this project, as well as to all collaborators, supervisors, and supporters who contributed to the project.
