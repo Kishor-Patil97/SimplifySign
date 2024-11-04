@@ -56,14 +56,14 @@ SimplifySign/
 
 
 ## Usage Guide
-1. Speech-to-Text: Click on the microphone button to start speaking. Your speech will be converted into text and displayed in the text area.
-2. Clear Text: Use the "Clear Text" button to clear the text area for new input.
-3. Text-to-Sign Language: Once text is displayed, click "Play" to start the sign language animation. Use "Pause" and "Stop" to control playback.
+1. **Speech-to-Text**: Click on the microphone button to start speaking. Your speech will be converted into text and displayed in the text area.
+2. **Clear Text**: Use the "Clear Text" button to clear the text area for new input.
+3. **Text-to-Sign Language**: Once text is displayed, click "Play" to start the sign language animation. Use "Pause" and "Stop" to control playback.
 
 ## Future Enhancements
-3D Avatar or Animated Hand Gestures: Expand to support more dynamic and realistic sign language animations.
-Database Integration: Optimize MongoDB for faster video retrieval and larger datasets.
-Sign Language Recognition: Develop algorithms for real-time sign language recognition and response.
+- **3D Avatar or Animated Hand Gestures**: Expand to support more dynamic and realistic sign language animations.
+- **Database Integration**: Optimize MongoDB for faster video retrieval and larger datasets.
+- **Sign Language Recognition**: Develop algorithms for real-time sign language recognition and response.
 
 ## License
 This project is for academic purposes as part of a Master’s Thesis and is open for educational use. All rights reserved by the author.
