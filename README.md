@@ -38,22 +38,22 @@ SimplifySign is a web application designed to enhance web accessibility by trans
 Set up a local MongoDB instance and load the WLASL dataset. Ensure MongoDB is running locally.
 
 4. **Run the Application**: Start the server using live-server:
-``bash
-live-server --port=8080
+   ```bash
+   live-server --port=8080
 
 Open your browser and navigate to http://localhost:8080 to view the application.
 
 ## Project Structure
-
-SimplifySign/
-├── public/                    # Contains HTML, CSS, JavaScript files
-│   ├── index.html             # Main HTML file
-│   ├── style.css              # Stylesheet
-│   └── app.js                 # Main JavaScript logic
-├── videos/                    # Folder for storing local video files (ignored by .gitignore)
-├── README.md                  # Project documentation
-├── .gitignore                 # Ignores node_modules, video files, and other non-essential items
-└── package.json               # Project metadata (future versions may require backend packages)
+   
+      SimplifySign/
+      ├── public/                    # Contains HTML, CSS, JavaScript files
+      │   ├── index.html             # Main HTML file
+      │   ├── style.css              # Stylesheet
+      │   └── app.js                 # Main JavaScript logic
+      ├── videos/                    # Folder for storing local video files (ignored by .gitignore)
+      ├── README.md                  # Project documentation
+      ├── .gitignore                 # Ignores node_modules, video files, and other non-essential items
+      └── package.json               # Project metadata (future versions may require backend packages)
 
 
 ## Usage Guide
