@@ -6,8 +6,7 @@ SimplifySign is a web application designed to enhance web accessibility by trans
 
 - **Speech-to-Text Conversion**: Captures spoken input through a microphone and converts it into text displayed on the web application.
 - **Text-to-Sign Language Translation**: Converts text input into sign language animations, either through animated hand gestures or a 3D avatar (future enhancement).
-- **User Controls**: Play, pause, and stop buttons allow control over the sign language animation playback.
-- **Clear Text Functionality**: Easily clears the text area for new input.
+- **Text Simplification**: Simplifies complex text for easier understanding by users with cognitive disabilities or learning difficulties.
 
 ## Technologies Used
 
@@ -46,25 +45,33 @@ Open your browser and navigate to http://localhost:8080 to view the application.
 ## Project Structure
    
       SimplifySign/
-      ├── public/                    # Contains HTML, CSS, JavaScript files
-      │   ├── index.html             # Main HTML file
-      │   ├── style.css              # Stylesheet
-      │   └── app.js                 # Main JavaScript logic
-      ├── videos/                    # Folder for storing local video files (ignored by .gitignore)
-      ├── README.md                  # Project documentation
-      ├── .gitignore                 # Ignores node_modules, video files, and other non-essential items
-      └── package.json               # Project metadata (future versions may require backend packages)
+      ├── Frontend/                 # Contains all project files
+      │   ├── data/                 # Contains all data-related files
+      │   ├── images/               # Contains background image of the login page
+      │   ├── app.js                # Main JavaScript logic
+      │   ├── index.js              # Additional JavaScript logic for the application
+      │   ├── login.html            # Login page HTML file
+      │   └── simplifyText.html     # Text simplification page HTML file
+      ├── videos/                   # Folder containing video files (ignored by .gitignore)
+      └── package.json              # Project metadata (future versions may require backend packages)
+
+      Note: The video files are not included in this repository due to GitHub's storage limitations. In the future, videos will be loaded directly from cloud storage.
 
 
 ## Usage Guide
-1. **Speech-to-Text**: Click on the microphone button to start speaking. Your speech will be converted into text and displayed in the text area.
-2. **Clear Text**: Use the "Clear Text" button to clear the text area for new input.
-3. **Text-to-Sign Language**: Once text is displayed, click "Play" to start the sign language animation. Use "Pause" and "Stop" to control playback.
+   **1. Speech to Text to Sign Language**
+   - **Speech-to-Text**: Click on the microphone button to start speaking. Your speech will be converted into text and displayed in the text area.
+   - **Text-to-Sign Language**: Once text is displayed, click "Play" to start the sign language animation. Use "Pause" and "Stop" to control playback.
+     
+   **2. SimplifyText**
+   - Users can enter or paste complex text into the text area, and the application will simplify it for easier understanding.
+   - The simplified text can then be converted into sign language using the text-to-sign language functionality.
 
 ## Future Enhancements
 - **3D Avatar or Animated Hand Gestures**: Expand to support more dynamic and realistic sign language animations.
 - **Database Integration**: Optimize MongoDB for faster video retrieval and larger datasets.
 - **Sign Language Recognition**: Develop algorithms for real-time sign language recognition and response.
+- **Enhanced Text Simplification Algorithm**s: Implement advanced natural language processing techniques for better text simplification.
 
 ## License
 This project is for academic purposes as part of a Master’s Thesis and is open for educational use. All rights reserved by the author.
