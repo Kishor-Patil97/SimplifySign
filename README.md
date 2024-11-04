@@ -38,7 +38,7 @@ SimplifySign is a web application designed to enhance web accessibility by trans
 Set up a local MongoDB instance and load the WLASL dataset. Ensure MongoDB is running locally.
 
 4. **Run the Application**: Start the server using live-server:
-```bash
+``bash
 live-server --port=8080
 
 Open your browser and navigate to http://localhost:8080 to view the application.
