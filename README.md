@@ -43,6 +43,7 @@ live-server --port=8080
 Open your browser and navigate to http://localhost:8080 to view the application.
 
 ## Project Structure
+
 SimplifySign/
 ├── public/                    # Contains HTML, CSS, JavaScript files
 │   ├── index.html             # Main HTML file
@@ -52,6 +53,7 @@ SimplifySign/
 ├── README.md                  # Project documentation
 ├── .gitignore                 # Ignores node_modules, video files, and other non-essential items
 └── package.json               # Project metadata (future versions may require backend packages)
+
 
 ## Usage Guide
 1. Speech-to-Text: Click on the microphone button to start speaking. Your speech will be converted into text and displayed in the text area.
